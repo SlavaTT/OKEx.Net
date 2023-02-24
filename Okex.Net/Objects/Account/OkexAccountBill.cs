@@ -43,4 +43,22 @@ public class OkexAccountBill
 
     [JsonProperty("notes")]
     public string Notes { get; set; }
+
+    [JsonProperty("type")]
+    public int Type { get; set; }
+
+    [JsonProperty("subType")]
+    public int SubType { get; set; }
+
+    [JsonProperty("posBal")]
+    public decimal? PositionBalance { get; set; }
+
+    [JsonProperty("posBalChg")]
+    public decimal? PositionBalanceChange { get; set; }
+
+    [JsonProperty("pnl")]
+    public decimal? Pnl { get; set; }
+
+    [JsonProperty("execType")]
+    public string ExecutionType { get; set; }
 }
